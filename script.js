@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update selected services list
         selectedItemsContainer.innerHTML = selectedServices.length > 0 
             ? selectedServices.map(service => `<div>${service}</div>`).join('') + '<button id="copy-btn">Másolás</button>'
-            : '<div>Nincs kiválasztott Diagnozis</div>';
+            : '<div>Nincs kiválasztott Diagnózis</div>';
 
             attachCopyEvent(selectedServices);
     }
