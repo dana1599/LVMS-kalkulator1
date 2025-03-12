@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVMS - Kalkulátor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="lvms-logo_v2.webp" type="image/x-icon">
+</head>
+<body>
+<img src="./lvms-logo.webp" alt="" width="400px" id="lvms-logo">
+    <div class="calculator-container">
+        <div class="services-list">
+            <div class="service-row">
+                <div class="service-name prevent-select">Végtag sérülés ellátása</div>
+                <div class="service-desc prevent-select">Törött, zúzódott, horzsolt végtag ellátása esetén.</div>
+                <div class="service-price prevent-select">8.000$</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="4" value="0" class="quantity-input" data-price="8000" readonly>
+                    <button class="add-btn" min="0" max="4">db</button>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-name prevent-select">Gyógyszeres kezelés</div>
+                <div class="service-desc prevent-select">- Lidocain, adrenalin, illetve a tananyagban felsorolt gyógyszerek esetén, max 5 darab alkalmazható.</div>
+                <div class="service-price prevent-select">5.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="5" value="0" class="quantity-input" data-price="5000" readonly>
+                    <button class="add-btn"min="0" max="5">db</button>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-name prevent-select">Általános egészségügyi ellátás</div>
+                <div class="service-desc prevent-select">- Animban lévő sérültnél, egyéb RP-nél.</div>
+                <div class="service-price prevent-select">10.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="1" value="0" class="quantity-input" data-price="10000" readonly>
+                    <button class="add-btn" min="0" max="1">db</button>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name prevent-select">Sebészeti ellátás</div>
+                <div class="service-desc prevent-select">- Lőtt illetve vágott sérüléseknél.</div>
+                <div class="service-price prevent-select">9.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="6" value="0" class="quantity-input" data-price="9000" readonly>
+                    <button class="add-btn" min="0" max="6">db</button>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name prevent-select">Helyszíni ellátás</div>
+                <div class="service-desc prevent-select">- Mikor KÓRHÁZon kívül történik az ellátás.</div>
+                <div class="service-price prevent-select">6.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="1" value="0" class="quantity-input" data-price="6000" readonly>
+                    <button class="add-btn" min="0" max="1">db</button>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name prevent-select">Betegszállítás</div>
+                <div class="service-desc prevent-select">- Mikor a sérültet a KÓRHÁZba szállítjuk be a helyszínről.</div>
+                <div class="service-price prevent-select">5.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="1" value="0" class="quantity-input" data-price="5000" readonly>
+                    <button class="add-btn" min="0" max="1">db</button>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name prevent-select">Elsőbbségi hívás</div>
+                <div class="service-desc prevent-select">- Rendvédelmi szervek (LVMPD/SASD) kihív sürgősségi rádión (Piros rádió).</div>
+                <div class="service-price prevent-select">10.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="1" value="0" class="quantity-input" data-price="10000" readonly>
+                    <button class="add-btn" min="0" max="1">db</button>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name prevent-select">Különleges mentés</div>
+                <div class="service-desc prevent-select">- MICA, helikopter, hajó, illetve bányán belül lévő ellátásnál.</div>
+                <div class="service-price prevent-select">10.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="1" value="0" class="quantity-input" data-price="10000" readonly>
+                    <button class="add-btn" min="0" max="1">db</button>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name prevent-select">Szándékos FALS hívás</div>
+                <div class="service-desc prevent-select">- Mikor kiérkezel a helyszínre, de nem kérik az ellátást, csak nem mondják le.</div>
+                <div class="service-price prevent-select">25.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="1" value="0" class="quantity-input" data-price="25000" readonly>
+                    <button class="add-btn" min="0" max="1">db</button>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div class="service-name prevent-select">Egészségügyi alkalmassági vizsgálat (MEFE)</div>
+                <div class="service-desc prevent-select">- Taxi, IRS, SASD illetve Jesse, Redline, Seering alkalmassági vizsgálatra jön akkor kell adni</div>
+                <div class="service-price prevent-select">10.000 $</div>
+                <div class="service-controls">
+                    <input type="number" min="0" max="1" value="0" class="quantity-input" data-price="10000" readonly>
+                    <button class="add-btn" min="0" max="1">db</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="selected-services">
+            <h3>Kiválasztott Diagnozis:</h3>
+            <div id="selected-items"></div>
+        </div>
+
+        <div class="total-section">
+            <h3>Összesített ár:</h3>
+            <div id="total-amount">0$</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
